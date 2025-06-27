@@ -28,9 +28,7 @@ Despliegue de microservicios en Kubernetes
 Configuración de pods, services y deployments
 Escalado automático y gestión de recursos
 
-
 🛠️ Tecnologías y Herramientas
 BackendCloud & DevOpsHerramientasSpring BootDockerIntelliJ IDEA / EclipseSpring CloudKubernetesPostmanSpring SecurityEureka ServerMavenSpring Data JPAZipkinGitResilience4jSpring Cloud ConfigH2 Database
 
-📊 Estructura del Curso
-🎯 Módulo 1: Fundamentos RESTful (37 pasos)
+
