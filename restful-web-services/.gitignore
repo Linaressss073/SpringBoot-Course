@@ -1,35 +1,98 @@
+# ------------------------
+# Archivos específicos del proyecto
+# ------------------------
+
 HELP.md
 target/
+build/
+*.log
+
+# Evita subir binarios innecesarios
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven Wrapper
 .mvn/wrapper/maven-wrapper.jar
+
+# Permitir target/build en src (por ejemplo, para ejemplos o submódulos)
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# ------------------------
+# Eclipse / Spring Tool Suite (STS)
+# ------------------------
+
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
+.metadata/
 
-### IntelliJ IDEA ###
-.idea
+# ------------------------
+# IntelliJ IDEA
+# ------------------------
+
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
+# ------------------------
+# NetBeans
+# ------------------------
+
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-.metadata/
 
+# ------------------------
+# Visual Studio Code
+# ------------------------
 
-### VS Code ###
 .vscode/
+
+# ------------------------
+# Sistema operativo
+# ------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ------------------------
+# Archivos temporales / de pruebas
+# ------------------------
+
+*.swp
+*.bak
+*.tmp
+*.backup
+
+# ------------------------
+# Otros
+# ------------------------
+
+# Log y reportes de errores
+*.log
+hs_err_pid*
+replay_pid*
+
+# Carpeta de test coverage
+coverage/
