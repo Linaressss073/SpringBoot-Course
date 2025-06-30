@@ -1,15 +1,17 @@
 package com.alejandro.rest.webservices.restful.web.services.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 // @JsonIgnoreProperties({"field1","field2"})
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
 	private String field1;
 	
-	@JsonIgnore // Se usa para ignorar tipos contraseñas y asi
 	private String field2;
 	
+	//@JsonIgnore // Se usa para ignorar tipos contraseñas y asi
 	private String field3;
 
 	public SomeBean(String field1, String field2, String field3) {
